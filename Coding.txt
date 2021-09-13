@@ -1,0 +1,402 @@
+ 
+public class HelloWorld {
+
+	public static void add(int a, int b) {
+	int c;
+	c=a+b;
+	
+	System.out.println("Value of c is "  +c);
+	}
+	public static void add(String a) {
+		
+		//String c;
+		//c=a+b;
+		
+		System.out.println("Welcome to Java Program " +a);
+	}
+		
+	public static void main(String[] args) {
+		add("SAYALI");
+	}
+
+}
+
+=========================================================
+import java.util.*;
+
+public class Arr {
+
+	public static void main(String[] args) {
+		
+		ArrayList weekdays = new ArrayList();
+		weekdays.add("Mon");
+		weekdays.add("Tue");
+		weekdays.add("wed");
+		weekdays.add("Thu");
+		weekdays.add("Fri");
+		
+		System.out.println("Day is: "+weekdays.get(5));
+	}
+}
+
+===================================================================
+
+import java.util.*;
+
+public class Arr {
+
+	public static void main(String[] args) {
+		
+		ArrayList weekdays = new ArrayList();
+		weekdays.add("Mon");
+		weekdays.add("Tue");
+		weekdays.add("wed");
+		weekdays.add("Thu");
+		weekdays.add("Fri");
+		
+	
+//	System.out.println("For Loop is as follows:");
+    //for (int counter = 0; counter < weekdays.size(); counter++) { 		      
+     //   System.out.println(weekdays.get(counter)); 	
+  //  }
+
+		System.out.println("While Loop is as follows:"); 		
+	      int count = 0; 		
+	      while (weekdays.size() > count) {
+		 System.out.println(weekdays.get(count));
+	         count++;
+}
+
+}
+	
+}
+
+========================================================================
+
+//Sort a numeric array and a string array
+
+import java.util.*;
+
+
+public class Demo1 {
+
+	public static void main(String[] args) 
+	{
+		
+		int[] demo_array1= {1,4,3,10,0,2,8};
+		System.out.println("original numeric array: " +Arrays.toString(demo_array1) );
+		Arrays.sort(demo_array1);
+		System.out.println("sorted numeric array: " +Arrays.toString(demo_array1));
+		
+		demo(); //calls Demo method
+
+	
+	
+	};
+	
+	public static void demo() {
+		String[] demo_array2= {"Pushkraj","Aboli","Sayali","Ajinkya"};
+		System.out.println("original numeric array: " +Arrays.toString(demo_array2) );
+		Arrays.sort(demo_array2);
+		System.out.println("sorted numeric array: " +Arrays.toString(demo_array2));
+	};
+	
+	
+
+}
+====================== //Sort a numeric array and a string array    ================================================
+
+//Sort a numeric array and a string array
+
+import java.util.*;
+
+
+public class Demo1 {
+
+	public static void main(String[] args) 
+	{
+		
+		int[] demo_array1= {1,4,3,10,0,2,8};
+		
+		String[] demo_array2= {"Pushkraj","Aboli","Sayali","Ajinkya"};
+		
+		System.out.println("original numeric array: " +Arrays.toString(demo_array1) );
+		Arrays.sort(demo_array1);
+		System.out.println("sorted numeric array: " +Arrays.toString(demo_array1));
+		
+		demo(demo_array2);
+	
+	};
+	
+	public static void demo(String[] demo_array2) {
+		
+		System.out.println("original numeric array: " +Arrays.toString(demo_array2) );
+		Arrays.sort(demo_array2);
+		System.out.println("sorted numeric array: " +Arrays.toString(demo_array2));
+	}
+	
+	
+
+}
+===================================================
+
+public class Demo1 {
+
+	public static void main(String[] args) 
+	{
+		
+		int a = 10, b= 3, c ;
+		c=a+b;
+		System.out.println("Value of c = "+c);
+}
+}
+===========================================================
+
+import java.util.*;
+
+
+public class Demo1 {
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the first value: ");
+		int a = sc.nextInt();
+		
+		System.out.println("Enter the second value: ");
+		int b = sc.nextInt();
+		
+		int c=a+b;
+		
+		System.out.println("Value of c = "+c);
+}
+}
+
+============================================================
+
+import java.util.*;
+
+
+public class Demo1 {
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the input Name");
+		String name =sc.nextLine();
+		
+		System.out.println("Welcome to Class " +name);
+		
+}
+}
+
+===========================================================
+
+import java.util.*;
+
+public class Demo1 {
+	
+	public static void  main(String[] args)
+	
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Name");
+		String name = sc.nextLine();
+
+		System.out.println("Enter the percentage");
+		double percentage = sc.nextDouble();
+
+		System.out.println("Enter the roll no");
+		int roll_no = sc.nextInt();
+
+		System.out.println("Welcome to the Class " +name);
+		
+		System.out.println("Your percentage is : " +percentage);
+		
+		System.out.println("Your Roll Number is : " +roll_no);
+	}
+};
+
+================================================================
+
+import java.util.*;
+
+public class Demo1 {
+	
+	public static void main(String[] args)
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the count");
+		
+		int count = sc.nextInt();
+		
+		int i,j;
+		for(i=0;i<count;i++)
+		{
+			for(j=0;j<=i;j++)
+			{
+				System.out.print("* "); 
+			}
+			System.out.println();   
+
+		}
+		}
+
+};
+
+==================================================================
+
+import java.util.*;
+
+public class Demo1 {
+	
+	public static void main(String[] args)
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the count");
+		
+		int count = sc.nextInt();
+		
+		int i,j;
+		for(i=count;i>=0;i--)
+		{
+			for(j=0;j<=i;j++)
+			{
+				System.out.print("* "); 
+			}
+			System.out.println();   
+
+		}
+		}
+
+};
+
+=================================================================
+
+import java.util.*;
+
+public class Demo1{
+	
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Please the count");
+		int count = sc.nextInt();
+		
+		int i,j,k;
+		for (i=0;i<count;i++)// for (i=count;i>=0;i--)
+		{
+			for (k=count-1;k>i;k--) 
+			{
+				System.out.print(" ");
+				
+			}
+			for (j=0;j<=i;j++ )
+			{
+				System.out.print("* " );
+			}
+			System.out.println();
+		}
+		
+				
+	}
+	
+	
+}
+==============================================================
+
+import java.util.*;
+
+public class Demo1{
+	
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Please enter the count");
+		int count = sc.nextInt();
+		
+		int i,j,k;
+		for (i=0;i<count;i++)
+		{
+			for (k=count-1;k>i;k--) 
+			{
+				System.out.print(" ");
+				
+			}
+			for (j=0;j<=i;j++ )
+			{
+				System.out.print("* " );
+			}
+			System.out.println();
+		}
+		for (i=count;i>=0;i--)
+		
+		{
+			for (k=count-1;k>i;k--) 
+			{
+				System.out.print(" ");
+				
+			}
+			for (j=0;j<=i;j++ )
+			{
+				System.out.print("* " );
+			}
+			System.out.println();
+		}
+				
+	}
+}
+	
+================================================================
+
+import java.util.*;
+
+public class Demo1{
+	
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Please enter the count");
+		int count = sc.nextInt();
+		
+		int i,j,k;
+		for (i=0;i<count;i++)
+		{
+			for (k=count;k>i;k--) 
+			{
+				System.out.print(" ");
+				
+			}
+			for (j=0;j<=i;j++ )
+			{
+				System.out.print("* " );
+			}
+			System.out.println();
+		}
+		for (i=count;i>=0;i--)
+		
+		{
+			for (k=count;k>i;k--) 
+			{
+				System.out.print(" ");
+				
+			}
+			for (j=0;j<=i;j++ )
+			{
+				System.out.print("* " );
+			}
+			System.out.println();
+		}
+				
+	}
+}
+	
